@@ -6,7 +6,8 @@ using System;
 using System.Text; //Use only if StringBuilder is needed
 //Do not include any more using statement or any unpermitted type
 
-Console.WriteLine("CPEN223 Lab 2");
+string userName = "Write Your Name Here";
+Console.WriteLine($"CPEN223 Lab 2 for user: {userName}");
 
 //Testing: Write some test cases to test well all methods you are to implement    
 //         This is to demonstrates what test cases you have considered
