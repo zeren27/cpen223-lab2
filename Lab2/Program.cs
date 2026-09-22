@@ -13,8 +13,14 @@ Console.WriteLine($"CPEN223 Lab 2 for user: {userName}");
 //Testing: Write some test cases to test well all methods you are to implement    
 //         This is to demonstrates what test cases you have considered
 //TODO 
-//Console.WriteLine($"hex=AAA; Expected value: 2730, Returned value: {Lab2.HexToDecimalNumber("AAA")}");
-Console.WriteLine($"hex=ABCD; Expected value: 43981, Returned value: {Lab2.HexToDecimalNumber("ABCD")}");
+// Test case 1
+// Console.WriteLine($"hex=AAA; Expected value: 2730, Returned value: {Lab2.HexToDecimalNumber("AAA")}");
+// Test case 2
+// Console.WriteLine($"hex=1ABF003; Expected value: 28045315, Returned value: {Lab2.HexToDecimalNumber("1ABF003")}");
+// Test case 3
+// Console.WriteLine($"hex=4B82F109; Expected value: 1,266,872,585, Returned value: {Lab2.HexToDecimalNumber("4B82F109")}");
+// Test case 4
+// Console.WriteLine($"hex=0; Expected value: 0, Returned value: {Lab2.HexToDecimalNumber("0")}");
 
 //end Testing code
 
