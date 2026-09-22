@@ -1,8 +1,9 @@
 ﻿// Lab 2 
-// Student name:
-// Student number:
+// Student name: Zeren Ulutas
+// Student number: 18622894
 
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Text; //Use only if StringBuilder is needed
 //Do not include any more using statement or any unpermitted type
 
@@ -12,8 +13,8 @@ Console.WriteLine($"CPEN223 Lab 2 for user: {userName}");
 //Testing: Write some test cases to test well all methods you are to implement    
 //         This is to demonstrates what test cases you have considered
 //TODO 
-Console.WriteLine($"hex=AAA; Expected value: 2730, Returned value: {Lab2.HexToDecimalNumber("AAA")}");
-
+//Console.WriteLine($"hex=AAA; Expected value: 2730, Returned value: {Lab2.HexToDecimalNumber("AAA")}");
+Console.WriteLine($"hex=ABCD; Expected value: 43981, Returned value: {Lab2.HexToDecimalNumber("ABCD")}");
 
 //end Testing code
 
@@ -31,7 +32,24 @@ public class Lab2
     public static int HexToDecimalNumber(string hexadecimal)
     {
         //TODO: To Implement
-        return -1;  //to fix 
+        int length = hexadecimal.Length;
+        int total = 0;
+
+        for (int index = 0; index <= length - 1; index++)
+        {
+            int num = 0;
+            char entry = hexadecimal[index];
+            if (entry >= '0' && entry <= '9')
+            {
+                num = entry - '0';
+            }
+            else if (entry >= 'A' && entry <= 'F')
+            {
+                num = entry - 'A' + 10;
+            }
+            total += num * (int)Math.Pow(16, length-1-index);
+        }
+        return total;  //to fix 
     }
 
     /// <summary>
